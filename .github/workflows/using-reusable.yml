@@ -2,11 +2,11 @@ name: Call a reusable workflow and use its outputs
 
 on:
   pull_request:
-    types: [labeled]
+    types: [labeled] # asdfasdfasdf
 
 jobs:
   job1:
-    uses: Rg3n0v4/test-actions-repo/.github/workflows/test-reusable-workflow.yml@main
+    uses: Rg3n0v4/test-actions-repo/.github/workflows/test-reusable-workflow.yml@feature/testing-pr
 
   job2:
     runs-on: ubuntu-latest

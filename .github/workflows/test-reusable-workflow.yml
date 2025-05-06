@@ -5,7 +5,6 @@ on:
     # Map the workflow outputs to job outputs
     outputs:
       firstword:
-        description: "The first output string"
         value: ${{ jobs.example_job.outputs.output1 }}
       secondword:
         description: "The second output string"
@@ -21,6 +20,9 @@ jobs:
       output2: ${{ steps.step2.outputs.secondword }}
     steps:
       - id: step1
-        run: echo "firstword=hello" >> $GITHUB_OUTPUT
+        run: 
+          |
+          var1="hello"
+          echo "firstword=$var1" >> $GITHUB_OUTPUT
       - id: step2
         run: echo "secondword=world" >> $GITHUB_OUTPUT
