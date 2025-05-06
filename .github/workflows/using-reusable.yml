@@ -6,7 +6,7 @@ on:
 
 jobs:
   job1:
-    uses: Rg3n0v4/test-actions-repo/.github/workflows/test-reusable-workflow.yml@main
+    uses: Rg3n0v4/test-actions-repo/.github/workflows/test-reusable-workflow.yml@feature/testing-pr
 
   job2:
     runs-on: ubuntu-latest
