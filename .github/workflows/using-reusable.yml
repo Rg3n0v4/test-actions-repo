@@ -2,7 +2,7 @@ name: Call a reusable workflow and use its outputs
 
 on:
   pull_request:
-    types: [labeled]
+    types: [labeled] # asdfasdfasdf
 
 jobs:
   job1:
